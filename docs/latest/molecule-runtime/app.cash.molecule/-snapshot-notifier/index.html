@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>RecompositionMode</title>
+    <title>SnapshotNotifier</title>
     <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../../";</script>
     <script>document.documentElement.classList.replace("no-js","js");</script>
@@ -104,43 +104,43 @@
                 </div>
             </div>
             <div id="main">
-<div class="main-content" data-page-type="classlike" id="content" pageIds="molecule-runtime::app.cash.molecule/RecompositionMode///PointingToDeclaration//-1597400381">
-  <div class="breadcrumbs"><a href="../../../index.html">molecule-runtime</a><span class="delimiter">/</span><a href="../index.html">app.cash.molecule</a><span class="delimiter">/</span><span class="current">RecompositionMode</span></div>
+<div class="main-content" data-page-type="classlike" id="content" pageIds="molecule-runtime::app.cash.molecule/SnapshotNotifier///PointingToDeclaration//-1597400381">
+  <div class="breadcrumbs"><a href="../../../index.html">molecule-runtime</a><span class="delimiter">/</span><a href="../index.html">app.cash.molecule</a><span class="delimiter">/</span><span class="current">SnapshotNotifier</span></div>
   <div class="cover ">
-    <h1 class="cover"><span>Recomposition</span><wbr></wbr><span><span>Mode</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">enum </span><a href="index.html">RecompositionMode</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="index.html">RecompositionMode</a><span class="token operator">&gt; </span></div><p class="paragraph">The different recomposition modes of Molecule.</p></div></div>
+    <h1 class="cover"><span>Snapshot</span><wbr></wbr><span><span>Notifier</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">enum </span><a href="index.html">SnapshotNotifier</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="index.html">SnapshotNotifier</a><span class="token operator">&gt; </span></div><p class="paragraph">The different snapshot notification modes of Molecule.</p><p class="paragraph">Compose uses snapshots to provide a consistent view of state. Mutations to state outside of the composition are not automatically observed, and notifications of changes must be manually sent. This can be achieved by registering a global write observer, for which you need at-minimum one per process. Applications which use other Compose-based systems like Compose UI likely already have one in place, whereas applications that only use Molecule need its automatic registering of this notifier.</p><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":molecule-runtime:dokkaHtml/commonMain" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/snapshots/Snapshot.Companion.html#sendapplynotifications"><span>Snapshot.</span><wbr></wbr><span>Companion.</span><wbr></wbr><span>send</span><wbr></wbr><span>Apply</span><wbr></wbr><span><span>Notifications</span></span></a></div></span></div><div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="ENTRY">Entries</button></div>
     <div class="tabs-section-body">
       <div data-togglable="ENTRY">
         <h2 class="">Entries</h2>
-        <div class="table"><a data-name="-1754717150%2FClasslikes%2F-1597400381" anchor-label="ContextClock" id="-1754717150%2FClasslikes%2F-1597400381" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain"></a>
+        <div class="table"><a data-name="2077369800%2FClasslikes%2F-1597400381" anchor-label="External" id="2077369800%2FClasslikes%2F-1597400381" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain"></a>
           <div class="table-row" data-togglable="ENTRY" data-filterable-current=":molecule-runtime:dokkaHtml/commonMain" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="-context-clock/index.html">ContextClock</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1754717150%2FClasslikes%2F-1597400381"></span>
+                  <div><a href="-external/index.html">External</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2077369800%2FClasslikes%2F-1597400381"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-context-clock/index.html">ContextClock</a></div></div><div class="brief "><p class="paragraph">When a recomposition is needed, use a <a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/MonotonicFrameClock.html">MonotonicFrameClock</a> pulled from the calling <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a> to determine when to run. If no clock is found in the context, an exception is thrown.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-external/index.html">External</a></div></div><div class="brief "><p class="paragraph">Rely on some other external system for sending snapshot change notifications.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-659015498%2FClasslikes%2F-1597400381" anchor-label="Immediate" id="-659015498%2FClasslikes%2F-1597400381" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain"></a>
+<a data-name="2108608162%2FClasslikes%2F-1597400381" anchor-label="WhileActive" id="2108608162%2FClasslikes%2F-1597400381" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain"></a>
           <div class="table-row" data-togglable="ENTRY" data-filterable-current=":molecule-runtime:dokkaHtml/commonMain" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="-immediate/index.html">Immediate</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-659015498%2FClasslikes%2F-1597400381"></span>
+                  <div><a href="-while-active/index.html">WhileActive</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2108608162%2FClasslikes%2F-1597400381"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-immediate/index.html">Immediate</a></div></div><div class="brief "><p class="paragraph">Run recomposition eagerly whenever one is needed. Molecule will emit a new item every time the snapshot state is invalidated.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-while-active/index.html">WhileActive</a></div></div><div class="brief "><p class="paragraph">Register a global snapshot write observer and send apply notifications when new writes occur using a coroutine launched on the same scope as the composition. This coroutine will be canceled and observer unregistered when that scope is canceled.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -149,17 +149,17 @@
       </div>
       <div data-togglable="PROPERTY">
         <h2 class="">Properties</h2>
-        <div class="table"><a data-name="-954599171%2FProperties%2F-1597400381" anchor-label="entries" id="-954599171%2FProperties%2F-1597400381" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain"></a>
+        <div class="table"><a data-name="-374099081%2FProperties%2F-1597400381" anchor-label="entries" id="-374099081%2FProperties%2F-1597400381" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain"></a>
           <div class="table-row" data-filterable-current=":molecule-runtime:dokkaHtml/commonMain" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="entries.html"><span><span>entries</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-954599171%2FProperties%2F-1597400381"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-374099081%2FProperties%2F-1597400381"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="entries.html">entries</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.enums/-enum-entries/index.html">EnumEntries</a><span class="token operator">&lt;</span><a href="index.html">RecompositionMode</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns a representation of an immutable list of all enum entries, in the order they're declared.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="entries.html">entries</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.enums/-enum-entries/index.html">EnumEntries</a><span class="token operator">&lt;</span><a href="index.html">SnapshotNotifier</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns a representation of an immutable list of all enum entries, in the order they're declared.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -168,13 +168,13 @@
           <div class="table-row" data-filterable-current=":molecule-runtime:dokkaHtml/commonMain" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="../-snapshot-notifier/-while-active/index.html#-372974862%2FProperties%2F-1597400381"><span><span>name</span></span></a></div>
+                  <div><a href="-while-active/index.html#-372974862%2FProperties%2F-1597400381"><span><span>name</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-372974862%2FProperties%2F-1597400381"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-snapshot-notifier/-while-active/index.html#-372974862%2FProperties%2F-1597400381">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-while-active/index.html#-372974862%2FProperties%2F-1597400381">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -183,13 +183,13 @@
           <div class="table-row" data-filterable-current=":molecule-runtime:dokkaHtml/commonMain" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="../-snapshot-notifier/-while-active/index.html#-739389684%2FProperties%2F-1597400381"><span><span>ordinal</span></span></a></div>
+                  <div><a href="-while-active/index.html#-739389684%2FProperties%2F-1597400381"><span><span>ordinal</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-739389684%2FProperties%2F-1597400381"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-snapshot-notifier/-while-active/index.html#-739389684%2FProperties%2F-1597400381">ordinal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-while-active/index.html#-739389684%2FProperties%2F-1597400381">ordinal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -198,32 +198,32 @@
       </div>
       <div data-togglable="FUNCTION">
         <h2 class="">Functions</h2>
-        <div class="table"><a data-name="1523918783%2FFunctions%2F-1597400381" anchor-label="valueOf" id="1523918783%2FFunctions%2F-1597400381" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain"></a>
+        <div class="table"><a data-name="-1056193659%2FFunctions%2F-1597400381" anchor-label="valueOf" id="-1056193659%2FFunctions%2F-1597400381" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain"></a>
           <div class="table-row" data-filterable-current=":molecule-runtime:dokkaHtml/commonMain" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="value-of.html"><span>value</span><wbr></wbr><span><span>Of</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1523918783%2FFunctions%2F-1597400381"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1056193659%2FFunctions%2F-1597400381"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="value-of.html"><span class="token function">valueOf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">RecompositionMode</a></div><div class="brief "><p class="paragraph">Returns the enum constant of this type with the specified name. The string must match exactly an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="value-of.html"><span class="token function">valueOf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">SnapshotNotifier</a></div><div class="brief "><p class="paragraph">Returns the enum constant of this type with the specified name. The string must match exactly an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="31842059%2FFunctions%2F-1597400381" anchor-label="values" id="31842059%2FFunctions%2F-1597400381" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain"></a>
+<a data-name="743304529%2FFunctions%2F-1597400381" anchor-label="values" id="743304529%2FFunctions%2F-1597400381" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain"></a>
           <div class="table-row" data-filterable-current=":molecule-runtime:dokkaHtml/commonMain" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="values.html"><span><span>values</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="31842059%2FFunctions%2F-1597400381"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="743304529%2FFunctions%2F-1597400381"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="values.html"><span class="token function">values</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="index.html">RecompositionMode</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns an array containing the constants of this enum type, in the order they're declared.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="values.html"><span class="token function">values</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="index.html">SnapshotNotifier</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns an array containing the constants of this enum type, in the order they're declared.</p></div></div></div>
                 </div>
               </div>
             </div>
