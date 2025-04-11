@@ -1,6 +1,13 @@
 # Change Log
 
 ## [Unreleased]
+[Unreleased]: https://github.com/cashapp/molecule/compare/2.0.0...HEAD
+
+Nothing yet!
+
+
+## [2.1.0] - 2025-04-11
+[2.1.0]: https://github.com/cashapp/molecule/releases/tag/2.1.0
 
 New:
 - Add `SnapshotNotifier` enum to control whether Molecule automatically sends snapshot apply notifications.
@@ -16,6 +23,7 @@ Fixed:
 
 
 ## [2.0.0] - 2024-05-28
+[2.0.0]: https://github.com/cashapp/molecule/releases/tag/2.0.0
 
 New:
 - Support for Kotlin 2.0.0!
@@ -340,8 +348,6 @@ Initial release
 
 
 
-[Unreleased]: https://github.com/cashapp/molecule/compare/2.0.0...HEAD
-[2.0.0]: https://github.com/cashapp/molecule/releases/tag/2.0.0
 [1.4.3]: https://github.com/cashapp/molecule/releases/tag/1.4.3
 [1.4.2]: https://github.com/cashapp/molecule/releases/tag/1.4.2
 [1.4.1]: https://github.com/cashapp/molecule/releases/tag/1.4.1

@@ -171,7 +171,7 @@ Molecule itself can then be added like any other dependency:
 
 ```groovy
 dependencies {
-  implementation("app.cash.molecule:molecule-runtime:2.0.0")
+  implementation("app.cash.molecule:molecule-runtime:2.1.0")
 }
 ```
 
@@ -188,7 +188,7 @@ repositories {
 }
 
 dependencies {
-  implementation("app.cash.molecule:molecule-runtime:2.1.0-SNAPSHOT")
+  implementation("app.cash.molecule:molecule-runtime:2.2.0-SNAPSHOT")
 }
 ```
 
