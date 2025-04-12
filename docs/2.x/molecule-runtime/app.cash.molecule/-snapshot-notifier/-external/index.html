@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>Immediate</title>
+    <title>External</title>
     <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../../../";</script>
     <script>document.documentElement.classList.replace("no-js","js");</script>
@@ -104,11 +104,11 @@
                 </div>
             </div>
             <div id="main">
-<div class="main-content" data-page-type="classlike" id="content" pageIds="molecule-runtime::app.cash.molecule/RecompositionMode.Immediate///PointingToDeclaration/{&quot;org.jetbrains.dokka.links.EnumEntryDRIExtra&quot;:{&quot;key&quot;:&quot;org.jetbrains.dokka.links.EnumEntryDRIExtra&quot;}}/-1597400381">
-  <div class="breadcrumbs"><a href="../../../../index.html">molecule-runtime</a><span class="delimiter">/</span><a href="../../index.html">app.cash.molecule</a><span class="delimiter">/</span><a href="../index.html">RecompositionMode</a><span class="delimiter">/</span><span class="current">Immediate</span></div>
+<div class="main-content" data-page-type="classlike" id="content" pageIds="molecule-runtime::app.cash.molecule/SnapshotNotifier.External///PointingToDeclaration/{&quot;org.jetbrains.dokka.links.EnumEntryDRIExtra&quot;:{&quot;key&quot;:&quot;org.jetbrains.dokka.links.EnumEntryDRIExtra&quot;}}/-1597400381">
+  <div class="breadcrumbs"><a href="../../../../index.html">molecule-runtime</a><span class="delimiter">/</span><a href="../../index.html">app.cash.molecule</a><span class="delimiter">/</span><a href="../index.html">SnapshotNotifier</a><span class="delimiter">/</span><span class="current">External</span></div>
   <div class="cover ">
-    <h1 class="cover"><span><span>Immediate</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="index.html">Immediate</a></div></div><p class="paragraph">Run recomposition eagerly whenever one is needed. Molecule will emit a new item every time the snapshot state is invalidated.</p><p class="paragraph">After the initial, synchronous recomposition, future recompositions will run on a thread managed by the dispatcher from the coroutine context.</p></div></div>
+    <h1 class="cover"><span><span>External</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="index.html">External</a></div></div><p class="paragraph">Rely on some other external system for sending snapshot change notifications.</p><p class="paragraph">This should only be used if you can guarantee that someone else is listening to global snapshot writes and sending apply notifications. Usually this means that some other Compose-based system is being used in your application, and that it will always be initialized prior to Molecule or at the same time.</p><p class="paragraph">Failure to ensure someone else is sending apply notifications will result in state writes not triggering additional recomposition.</p><p class="paragraph">Some examples where this policy can be used:</p><ul><li><p class="paragraph">On Android, using Compose UI <i>before</i> Molecule (e.g., even just calling <code class="lang-kotlin">setContent { }</code> on an <code class="lang-kotlin">Activity</code> or <code class="lang-kotlin">ComposeView</code>) will start a singleton snapshot write listener and applier. If you are sure that this will <i>always</i> happen, specifying this policy for all Molecule launches is valid.</p></li><li><p class="paragraph">On JetBrains' Compose UI for Desktop, calling the <code class="lang-kotlin">application { }</code> function is enough to ensure their singleton snapshot write listener and applier is started (you do not have to even show a window).</p></li></ul></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -119,13 +119,13 @@
           <div class="table-row" data-filterable-current=":molecule-runtime:dokkaHtml/commonMain" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="../../-snapshot-notifier/-while-active/index.html#-372974862%2FProperties%2F-1597400381"><span><span>name</span></span></a></div>
+                  <div><a href="../-while-active/index.html#-372974862%2FProperties%2F-1597400381"><span><span>name</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-372974862%2FProperties%2F-1597400381"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../../-snapshot-notifier/-while-active/index.html#-372974862%2FProperties%2F-1597400381">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-while-active/index.html#-372974862%2FProperties%2F-1597400381">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -134,13 +134,13 @@
           <div class="table-row" data-filterable-current=":molecule-runtime:dokkaHtml/commonMain" data-filterable-set=":molecule-runtime:dokkaHtml/commonMain">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="../../-snapshot-notifier/-while-active/index.html#-739389684%2FProperties%2F-1597400381"><span><span>ordinal</span></span></a></div>
+                  <div><a href="../-while-active/index.html#-739389684%2FProperties%2F-1597400381"><span><span>ordinal</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-739389684%2FProperties%2F-1597400381"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../../-snapshot-notifier/-while-active/index.html#-739389684%2FProperties%2F-1597400381">ordinal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":molecule-runtime:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-while-active/index.html#-739389684%2FProperties%2F-1597400381">ordinal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
                 </div>
               </div>
             </div>
