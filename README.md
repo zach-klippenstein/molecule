@@ -17,6 +17,8 @@ fun CoroutineScope.launchCounter(): StateFlow<Int> = launchMolecule(mode = Conte
 }
 ```
 
+![molecule is not a framework, just a headless compose ui meme](./molecule_not_a_framework_sign.jpg)
+
 [^1]: …and NOT Jetpack Compose UI!
 
 
